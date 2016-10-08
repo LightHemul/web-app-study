@@ -78,6 +78,19 @@ h1, h2, h3,h4, h5 {
 }
 
 @keyframes appearIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    0% { opacity: 0;}
+    0% { opacity: 1; }
+    100% { opacity: 1; color: #0f0;}
+}
+
+#my_image{
+    position: absolute;
+    animation-name: runSnegir;
+    z-index: 10;
+    animation-duration: 10s;
+}
+
+@keyframes runSnegir {
+    from {left: 0px; top: 0px}
+    to {left: 800px; top: 600px}
 }
